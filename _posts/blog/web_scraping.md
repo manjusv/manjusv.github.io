@@ -1,0 +1,1 @@
+XPath is very powerful, it's kind of a query language like SQL but for XML documents, including HTML documents, so it is a natural fit for web scraping. A lot of people never learn it and use CSS selectors and regex, and have a really hard time scraping anything complicated.
