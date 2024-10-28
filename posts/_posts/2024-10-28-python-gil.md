@@ -1,13 +1,12 @@
 ---
 title: "Python Global Interpreter Lock (GIL)"
 categories:
-  - Post Formats
+  - Python
 tags:
-  - chat
-  - Post Formats
+  - python
+  - GIL
+  - Global Interpreter Lock
 ---
-
-# Python Global Interpreter Lock (GIL)
 
 The **Global Interpreter Lock (GIL)** in Python is a mechanism that restricts the execution of Python bytecode to only one thread at a time. Think of it like a traffic light at a one-lane bridge where only one car can cross at any given time—even though there may be multiple cars waiting. This means only one thread can execute Python code, even if you have multiple threads ready to run.
 
