@@ -1,4 +1,11 @@
-
+---
+title: "Generators in Python"
+categories:
+  - Generators
+tags:
+  - generators
+  - python
+---
 ## What are Generators in Python?
 Generators in Python are a type of iterable, like lists or tuples, but unlike these collections, they generate values one at a time and only when needed, instead of storing everything in memory at once.
 
