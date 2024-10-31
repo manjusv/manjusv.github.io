@@ -7,7 +7,7 @@ tags:
   - list comprehension
 ---
 ## What are List Comprehensions in Python?
-List comprehensions provide a shorthand syntax to generate lists. They are written within square brackets **[]** and consist of an expression followed by a for clause, with optional conditional statements.
+List comprehensions provide a shorthand syntax to generate lists. They are written within square brackets **[]** and consist of an expression followed by a **for** clause, with optional conditional statements.
 
 **Syntax of List Comprehension:**
 ```python
