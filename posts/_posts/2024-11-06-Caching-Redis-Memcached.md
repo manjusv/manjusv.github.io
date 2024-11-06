@@ -55,6 +55,7 @@ Caching is a mechanism that helps store copies of data or computational results 
 ## Code Examples
 
 - **Using Redis for Caching**: To use Redis, you’ll need to install the `redis` Python package and have Redis running.
+
 ```python
 import redis
 
@@ -73,6 +74,7 @@ else:
 ```
 
 - **Using Memcached for Caching**: To use Memcached, install the `pymemcache` library and have Memcached running.
+
 ```python
 from pymemcache.client import base
 
