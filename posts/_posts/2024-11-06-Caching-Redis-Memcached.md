@@ -17,7 +17,7 @@ Caching is a mechanism that helps store copies of data or computational results 
 ## Redis vs. Memcached
 
 - **Redis**:
-    - **Overview**: An in-memory data structure store that can be used as a cache, database, and message broker. It supports various data structures like strings, lists, sets, sorted sets, and hashes.
+    - **Overview**: An in-memory data structure store that can be used as a cache, database, and message broker. It supports various data structures like strings, lists, sets, sorted sets, and hashes. Redis supports data persistence, meaning it can save cache data to disk periodically or as specified by the configuration. So, if Redis stops or crashes, it can reload the cached data upon restarting, retaining the previously stored information.
 
     - **Features**: Data persistence, advanced data types, built-in replication, Lua scripting, and pub/sub capabilities.
 
@@ -25,8 +25,10 @@ Caching is a mechanism that helps store copies of data or computational results 
 
 - **Memcached**:
 
-    - **Overview**: A simple, distributed, in-memory caching system designed for straightforward key-value storage.
+    - **Overview**: A simple, distributed, in-memory caching system designed for straightforward key-value storage. Memcached does not support data persistence. It only keeps data in memory, meaning if Memcached restarts, all cached data is lost and must be reloaded or recalculated from scratch.
+
     - **Features**: Lightweight and fast, easy to set up, minimal configuration, but no data persistence or advanced data structures.
+
     - **When to Use**: Best for simple key-value data caching where speed is essential, and persistence is not required.
 
 ## Use of Caching in APIs
@@ -52,7 +54,7 @@ Caching is a mechanism that helps store copies of data or computational results 
 
 ## Code Examples
 
-- **Using Redis for Caching**: To use Redis, you’ll need to install the redis Python package and have Redis running.
+- **Using Redis for Caching**: To use Redis, you’ll need to install the `redis` Python package and have Redis running.
 ```python
 import redis
 
@@ -70,7 +72,7 @@ else:
     print("Cache miss")
 ```
 
-- **Using Memcached for Caching**: To use Memcached, install the pymemcache library and have Memcached running.
+- **Using Memcached for Caching**: To use Memcached, install the `pymemcache` library and have Memcached running.
 ```python
 from pymemcache.client import base
 
