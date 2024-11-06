@@ -7,7 +7,7 @@ tags:
   - memchached
 ---
 
-Caching is a mechanism that helps store copies of data or computational results in a temporary storage location to improve data retrieval speeds and reduce load on databases or services. In API development, caching is especially crucial for enhancing performance and scalability. Let's break down the concept in detail, including Redis and Memcached.
+Caching is a mechanism that helps store copies of data or computational results in a temporary storage location to improve data retrieval speeds and reduce load on databases or services. In API development, caching is especially crucial for enhancing performance and scalability. Let's break down the concept in detail, including Redis and Memcached. 
 
 ## What is Caching?
 - **Layman Explanation**: Imagine you’re reading a book, and you frequently refer to the glossary at the back. If you write down commonly looked-up words on a sticky note, you save time by not flipping pages repeatedly. This sticky note acts like a cache.
