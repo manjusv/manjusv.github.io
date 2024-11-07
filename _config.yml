@@ -100,6 +100,8 @@ analytics:
     tracking_id          : G-DLF9YBS129
     anonymize_ip         : # true, false (default)
 
+google_analytics: G-DLF9YBS129
+
 
 # Site Author
 author:
