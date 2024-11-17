@@ -1,4 +1,11 @@
-
+---
+title: "Monolithic vs Microservices"
+categories:
+  - python
+tags:
+  - microservices
+  - monolithic
+---
 ## What Are Microservices?
 ### In layman’s terms:
 Microservices are like building blocks of a house, each performing its own job. Instead of building one big piece (a monolith), you create several smaller, independent blocks (microservices) that work together. If one block breaks, the others keep working.
