@@ -177,6 +177,11 @@ if __name__ == '__main__':
 - **Postman**: For testing APIs.
 - **Prometheus/Grafana**: For monitoring and visualization.
 
+## Common Misconceptions About Microservices
+- **Microservices = Better Performance**: Not always true. The network overhead and latency can actually make microservices slower if not designed carefully.
+- **Microservices = Easier Development**: Microservices can increase complexity, especially for small teams or projects.
+- **Every Service Should Be Separate**: Over-splitting services can lead to excessive communication overhead.
+
 ## Final Thoughts
 - **Start Monolithic, Scale to Microservices**: Begin with a monolithic approach for simpler projects. Break into microservices only when the application complexity and scale demand it.
 - **Balance Is Key**: Not every application benefits from microservices. Use them only when their advantages align with your project’s needs.
