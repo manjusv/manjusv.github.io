@@ -116,16 +116,6 @@ Messages are processed in a **FIFO (First In, First Out)** manner unless the que
     - Systems requiring high throughput, like **real-time analytics**, **event sourcing**, or **IoT**.
     - Use cases where durability and scalability are critical, e.g., **log aggregation** or **stream processing**.
 
-Feature	RabbitMQ	Redis	Kafka
-Protocol	AMQP	Pub/Sub	Custom
-Durability	Yes (persistence supported)	No	Yes (log storage)
-Throughput	Medium	High	Very High
-Complexity	Moderate	Low	High
-Use Case	Reliable messaging, routing	Real-time notifications	High-throughput event streaming
-Message Order	Optional	No	Yes
-Setup	Moderately easy	Simple	Complex
-
-
 ### Comparison Table
 <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -192,18 +182,123 @@ Setup	Moderately easy	Simple	Complex
     1. Inventory service.
     2. Notification service (sends email).
 
+**Code Example**:
+
+**Producer (Sender)**:
+```python
+import pika
+
+# Establish connection and channel
+connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+channel = connection.channel()
+
+# Declare a queue
+channel.queue_declare(queue='test_queue')
+
+# Publish a message
+message = "Hello from RabbitMQ!"
+channel.basic_publish(exchange='', routing_key='test_queue', body=message)
+
+print(f"Sent: {message}")
+connection.close()
+```
+**Consumer (Receiver)**:
+```python
+import pika
+
+# Establish connection and channel
+connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+channel = connection.channel()
+
+# Declare the same queue
+channel.queue_declare(queue='test_queue')
+
+# Define a callback function
+def callback(ch, method, properties, body):
+    print(f"Received: {body.decode()}")
+
+# Consume messages
+channel.basic_consume(queue='test_queue', on_message_callback=callback, auto_ack=True)
+print("Waiting for messages. Press CTRL+C to exit.")
+channel.start_consuming()
+```
 ### Redis Example:
 **Use Case**: Chat application.
 
 - **Producer**: User A sends a message to the "chat_room_1" channel.
 - **Consumer**: User B subscribes to "chat_room_1" and receives the message in real-time.
 
+**Code Example**:
+
+**Publisher**:
+```python
+import redis
+
+# Connect to Redis
+redis_client = redis.StrictRedis(host='localhost', port=6379, decode_responses=True)
+
+# Publish a message
+channel = 'test_channel'
+message = "Hello from Redis!"
+redis_client.publish(channel, message)
+
+print(f"Sent: {message}")
+```
+**Subscriber**:
+```python
+import redis
+
+# Connect to Redis
+redis_client = redis.StrictRedis(host='localhost', port=6379, decode_responses=True)
+
+# Subscribe to a channel
+pubsub = redis_client.pubsub()
+pubsub.subscribe('test_channel')
+
+print("Waiting for messages...")
+for message in pubsub.listen():
+    if message['type'] == 'message':
+        print(f"Received: {message['data']}")
+```
+
 ### Kafka Example:
 **Use Case**: Log aggregation for analytics.
 
 - **Producer**: Applications send logs to Kafka topics.
 - **Consumer**: Analytics service processes logs in real-time to generate insights.
+**Code Example**:
 
+**Producer**:
+```python
+from kafka import KafkaProducer
+
+# Connect to Kafka
+producer = KafkaProducer(bootstrap_servers='localhost:9092')
+
+# Send a message
+topic = 'test_topic'
+message = b"Hello from Kafka!"
+producer.send(topic, message)
+
+print(f"Sent: {message.decode()}")
+producer.close()
+```
+**Consumer**:
+```python
+from kafka import KafkaConsumer
+
+# Connect to Kafka
+consumer = KafkaConsumer(
+    'test_topic',
+    bootstrap_servers='localhost:9092',
+    auto_offset_reset='earliest',
+    group_id='test_group'
+)
+
+print("Waiting for messages...")
+for message in consumer:
+    print(f"Received: {message.value.decode()}")
+```
 ## When to Use What?
 <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
