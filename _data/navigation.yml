@@ -5,7 +5,7 @@ main:
   - title: "All Posts"
     url: /posts/
     description: "See All the posts"
-  - title: "Python Posts"
+  - title: "Python"
     url: /python-posts/
     description: "See all the python posts"
   # - title: "Categories"

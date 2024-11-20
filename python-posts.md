@@ -1,5 +1,6 @@
 ---
 layout: default
+author_profile: true
 title: "Python Posts"
 permalink: /python-posts/
 ---
