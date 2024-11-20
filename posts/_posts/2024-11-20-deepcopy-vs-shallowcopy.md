@@ -73,11 +73,7 @@ print("Deep Copy:", deep_copy)          # [[99, 2, 3], [4, 5, 6]]
 - Modifying the inner list in deep_copy does not affect original_list because all inner objects were copied.
 
 ## Comparison Table
-Feature	Shallow Copy	Deep Copy
-Outer Object	Copied	Copied
-Inner Objects	References to original	Completely new copies
-Impact of Changes	Changes in inner objects affect original	Changes in inner objects do not affect original
-Performance	Faster	Slower
+
 <table border="1" style="border-collapse: collapse; width: 100%;">
     <thead>
         <tr style="background-color: #f2f2f2;">
