@@ -7,7 +7,7 @@ permalink: /python-posts/
 # Python Posts
 
 {% for post in site.posts %}
-{% if "python" in post.categories %}
+{% if post.categories contains "python" %}
 - [{{ post.title }}]({{ post.url }})
 {% endif %}
 {% endfor %}
