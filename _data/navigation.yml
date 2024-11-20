@@ -2,9 +2,12 @@
 main:
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Posts"
+  - title: "All Posts"
     url: /posts/
-    # description: "See All the posts"
+    description: "See All the posts"
+  - title: "Python Posts"
+    url: /python-posts/
+    description: "See all the python posts"
   # - title: "Categories"
   #   url: /categories/
   # - title: "Tags"
@@ -15,3 +18,4 @@ main:
   #   url: /collection-archive/
   - title: "Resume"
     url: /resume/manjusv_resume.pdf
+    description: "My resume"
