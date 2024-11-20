@@ -1,8 +1,7 @@
 ---
 title: "Authentication & Authorization: OAuth2, JWT, handling sessions, role-based access control (RBAC)"
 categories:
-  - authentication
-  - authorization
+  - python
 tags:
   - authentication
   - authorization

@@ -1,7 +1,7 @@
 ---
 title: "Decorators in Python"
 categories:
-  - Decorators
+  - python
 tags:
   - decorators
   - python

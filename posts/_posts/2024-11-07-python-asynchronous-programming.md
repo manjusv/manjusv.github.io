@@ -1,9 +1,10 @@
 ---
 title: "Asynchronous Programming: AsyncIO, blocking/non-blocking execution"
 categories:
-  - Asynchronous Programming
+  - python
 tags:
   - asyncIO
+  - asynchronous programming
 ---
 ## Python Asynchronous Programming: An Overview
 Asynchronous programming in Python, primarily achieved through the `asyncio` library, allows code to handle multiple tasks concurrently without traditional multi-threading or multi-processing. This is especially beneficial for tasks that involve waiting for external resources (like network responses) and where it’s unnecessary for code to wait idly until the task is complete.

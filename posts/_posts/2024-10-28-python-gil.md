@@ -3,7 +3,6 @@ title: "Python Global Interpreter Lock (GIL)"
 categories:
   - Python
 tags:
-  - python
   - GIL
   - Global Interpreter Lock
 ---

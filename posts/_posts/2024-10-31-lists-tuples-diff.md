@@ -1,8 +1,6 @@
 ---
 title: "Differences between Lists and Tuples in Python"
 categories:
-  - lists
-  - tuples
   - python
 tags:
   - lists

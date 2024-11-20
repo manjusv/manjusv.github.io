@@ -1,7 +1,7 @@
 ---
 title: "Multi-threading in Python: Threading module, synchronization, thread safety"
 categories:
-  - multithreading
+  - python
 tags:
   - multithreading
 ---

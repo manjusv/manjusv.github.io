@@ -1,7 +1,6 @@
 ---
 title: "List Comprehensions in Python"
 categories:
-  - list comprehensions
   - python
 tags:
   - list comprehension

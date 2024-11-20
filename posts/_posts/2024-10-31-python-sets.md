@@ -1,7 +1,6 @@
 ---
 title: "Sets in Python"
 categories:
-  - sets
   - python
 tags:
   - sets

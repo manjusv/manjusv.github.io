@@ -1,7 +1,7 @@
 ---
 title: "Generators in Python"
 categories:
-  - Generators
+  - python
 tags:
   - generators
   - python

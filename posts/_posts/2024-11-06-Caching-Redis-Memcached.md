@@ -1,10 +1,11 @@
 ---
 title: "Caching: Redis, Memcached, use in APIs"
 categories:
-  - caching
+  - python
 tags:
   - redis
   - memchached
+  - caching
 ---
 
 Caching is a mechanism that helps store copies of data or computational results in a temporary storage location to improve data retrieval speeds and reduce load on databases or services. In API development, caching is especially crucial for enhancing performance and scalability. Let's break down the concept in detail, including Redis and Memcached. 

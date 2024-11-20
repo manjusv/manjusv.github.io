@@ -1,7 +1,6 @@
 ---
 title: "Exception Handling in Python"
 categories:
-  - exception handling
   - python
 tags:
   - exception handling

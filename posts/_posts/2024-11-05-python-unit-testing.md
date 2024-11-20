@@ -1,9 +1,8 @@
 ---
 title: "Mocking & Unit Testing Frameworks: PyTest, unittest, PyMock"
 categories:
-  - unittesting
-tags:
   - python
+tags:
   - unittesting
 ---
 
