@@ -110,6 +110,7 @@ print("Deep Copy:", deep_copy)          # [[99, 2, 3], [4, 5, 6]]
 ### Use Case for Shallow Copy
 - **Scenario**: A list of employees with unique IDs but the same default settings.
 - **Reason**: You don’t need to copy the inner object (settings), as it’s shared across all employees.
+
 ```python
 default_settings = {"theme": "dark", "notifications": True}
 employees = [{"id": 1, "settings": default_settings}, {"id": 2, "settings": default_settings}]
@@ -122,6 +123,7 @@ print(employees[0]["settings"]["theme"])  # Output: light (shared settings modif
 ### Use Case for Deep Copy
 - **Scenario**: A simulation where each user’s settings evolve independently over time.
 - **Reason**: The inner objects (settings) should not be shared.
+
 ```python
 import copy
 
