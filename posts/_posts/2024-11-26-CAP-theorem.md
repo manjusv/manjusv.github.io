@@ -67,6 +67,7 @@ Suppose you’re building an inventory system using Python and a distributed dat
 
 - **Consistency Example**:
 Ensure that every update to the inventory reflects immediately. Use a distributed lock to guarantee consistency.
+
 ```python
 import redis
 from redis.exceptions import LockError
@@ -89,6 +90,7 @@ update_inventory("item_101", 10)
 - **Availability Example**:
 Allow updates to proceed even if not all nodes are in sync.
 This ensures no downtime, but the inventory might show stale data.
+
 ```python
 # Simulating an eventual consistency model
 def update_inventory_eventual(item_id, quantity):
