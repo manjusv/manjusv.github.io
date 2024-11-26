@@ -8,6 +8,9 @@ main:
   - title: "Python"
     url: /python-posts/
     description: "See all the python posts"
+  - title: "SQL"
+    url: /sql-posts/
+    description: "See all the SQL posts"
   # - title: "Categories"
   #   url: /categories/
   # - title: "Tags"
