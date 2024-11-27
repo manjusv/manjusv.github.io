@@ -163,6 +163,7 @@ CREATE INDEX idx_hash_user_id ON users USING HASH(user_id);
 3. **Database Connection Pooling**:
     - Use libraries like SQLAlchemy or psycopg2 with connection pooling to reduce overhead.
     - **Example**:
+
     ```python
     from psycopg2.pool import SimpleConnectionPool
 
@@ -176,6 +177,7 @@ CREATE INDEX idx_hash_user_id ON users USING HASH(user_id);
 4. **Batch Queries**:
     - Process bulk data in batches instead of executing multiple queries sequentially.
     - **Example**:
+
     ```python
     from psycopg2.extras import execute_batch
 
@@ -187,6 +189,7 @@ CREATE INDEX idx_hash_user_id ON users USING HASH(user_id);
     - Use caching mechanisms like Redis for frequently accessed data.
     - Cache query results in memory where applicable.
     - **Example**:
+
     ```python
     import redis
 
