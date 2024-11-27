@@ -1,5 +1,5 @@
 ---
-title: 'Database Indexes - UNIQUE, CLUSTERED, NONCLUSTERED"
+title: "Database Indexes - UNIQUE, CLUSTERED, NONCLUSTERED"
 categories:
   - sql
 tags:
