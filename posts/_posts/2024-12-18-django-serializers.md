@@ -107,7 +107,7 @@ print(serializer.data)
 ]
 ```
 ### Deserialize JSON Data (Convert to Python Object)
-```json
+```python
 from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
 from io import BytesIO
