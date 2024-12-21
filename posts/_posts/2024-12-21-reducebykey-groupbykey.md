@@ -126,6 +126,7 @@ You **move every single fruit** to its respective basket, even if it’s the sam
 ## `reduceByKey()` Real-World Use Cases
 1. **Log Analysis - Count Requests per Status Code**
     - Imagine analyzing web server logs to count how many requests returned status codes like `200`, `404`, `500`.
+
     ```python
     logs = [("200", 1), ("404", 1), ("200", 1), ("500", 1), ("404", 1)]
     rdd = spark.sparkContext.parallelize(logs)
@@ -138,6 +139,7 @@ You **move every single fruit** to its respective basket, even if it’s the sam
 
 2. **Sales Aggregation - Total Sales by Region**
     - Suppose you have sales data, and you want to calculate total sales per region.
+
     ```python
     sales = [("North", 100), ("South", 200), ("North", 300), ("East", 150)]
     rdd = spark.sparkContext.parallelize(sales)
@@ -150,6 +152,7 @@ You **move every single fruit** to its respective basket, even if it’s the sam
 
 3. **Word Count - Common Data Processing Task**
     - This is a classic Spark example for counting the occurrences of each word in a text file.
+
     ```python
     text = ["hello world", "hello spark", "world of spark"]
     rdd = spark.sparkContext.parallelize(text)
@@ -166,6 +169,7 @@ You **move every single fruit** to its respective basket, even if it’s the sam
 ## `groupByKey()` Real-World Use Cases
 1. **Group Transactions by Customer**
     - Suppose you have transaction data and want to see all transactions made by each customer.
+
     ```python
     transactions = [("cust1", 100), ("cust2", 200), ("cust1", 300), ("cust2", 400)]
     rdd = spark.sparkContext.parallelize(transactions)
@@ -178,6 +182,7 @@ You **move every single fruit** to its respective basket, even if it’s the sam
 
 2. **Organize Student Scores by Subject**
     - If you have student scores and want to group all scores for each subject.
+
     ```python
     scores = [("math", 85), ("science", 90), ("math", 78), ("science", 88)]
     rdd = spark.sparkContext.parallelize(scores)
@@ -190,6 +195,7 @@ You **move every single fruit** to its respective basket, even if it’s the sam
 
 3. **Analyze Reviews by Product**
     - You have customer reviews for products, and you want to group reviews by each product.
+    
     ```python
     reviews = [("product1", "Great!"), ("product2", "Good"), ("product1", "Excellent"), ("product2", "Average")]
     rdd = spark.sparkContext.parallelize(reviews)
