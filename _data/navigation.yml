@@ -15,7 +15,7 @@ main:
     url: /sql-posts/
     description: "See all the SQL posts"
   - title: "Spark"
-    url: /data-engineering-posts/
+    url: /apache-spark-posts/
     description: "See all the Spark posts"
   # - title: "Categories"
   #   url: /categories/

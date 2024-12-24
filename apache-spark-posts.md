@@ -2,7 +2,7 @@
 layout: default
 author_profile: true
 title: "Spark Posts"
-permalink: /data-engineering-posts/
+permalink: /apache-spark-posts/
 ---
 
 # Spark Posts
