@@ -1,11 +1,12 @@
 ---
 title: "Narrow and Wide Transformations in Spark"
 categories:
-  - data engineering
+  - spark
 tags:
   - narrow transformation
   - data engineering
   - wide transformation
+  - spark
 ---
 In Apache Spark, Transformations are divided into two types: **Narrow** and **Wide** Transformations. Understanding these helps optimize Spark jobs for performance and resource management.
 

@@ -1,7 +1,7 @@
 ---
 title: "reduceByKey() vs groupByKey() in Spark"
 categories:
-  - data engineering
+  - spark
 tags:
   - reduceByKey()
   - groupByKey()
@@ -195,7 +195,7 @@ You **move every single fruit** to its respective basket, even if it’s the sam
 
 3. **Analyze Reviews by Product**
     - You have customer reviews for products, and you want to group reviews by each product.
-    
+
     ```python
     reviews = [("product1", "Great!"), ("product2", "Good"), ("product1", "Excellent"), ("product2", "Average")]
     rdd = spark.sparkContext.parallelize(reviews)

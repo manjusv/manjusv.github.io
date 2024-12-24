@@ -1,7 +1,7 @@
 ---
 title: "Jobs, Stages and Tasks in Spark"
 categories:
-  - data engineering
+  - spark
 tags:
   - jobs
   - stage
