@@ -1,14 +1,14 @@
 ---
 layout: default
 author_profile: true
-title: "Data Engineering Posts"
+title: "Spark Posts"
 permalink: /data-engineering-posts/
 ---
 
-# Data Engineering Posts
+# Spark Posts
 
 {% for post in site.posts %}
-{% if post.categories contains "data engineering" %}
+{% if post.categories contains "spark" %}
 - [{{ post.title }}]({{ post.url }})
 {% endif %}
 {% endfor %}

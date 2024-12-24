@@ -14,9 +14,9 @@ main:
   - title: "SQL"
     url: /sql-posts/
     description: "See all the SQL posts"
-  - title: "Data Engineering"
+  - title: "Spark"
     url: /data-engineering-posts/
-    description: "See all the Data Engineering posts"
+    description: "See all the Spark posts"
   # - title: "Categories"
   #   url: /categories/
   # - title: "Tags"

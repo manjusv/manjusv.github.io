@@ -1,10 +1,10 @@
 ---
 title: "Transformations and Actions in Spark"
 categories:
-  - data engineering
+  - spark
 tags:
   - spark
-  - data engineering
+  - spark
   - apache spark
 ---
 In Apache Spark, two key operations work together to process data: Transformations and Actions. Understanding these concepts helps us efficiently work with large datasets.
