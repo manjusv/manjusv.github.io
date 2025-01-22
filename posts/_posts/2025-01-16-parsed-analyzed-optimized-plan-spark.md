@@ -154,6 +154,7 @@ print(result.queryExecution.optimizedPlan)
 - **Scenario**: A query is running slower than expected due to reading unnecessary columns or rows.
 
 - **Solution**: Check the optimized logical plan to see if projection pruning or predicate pushdown is applied.
+
 ```python
 # Example of Performance Optimization
 df = spark.read.parquet("large_data.parquet")
